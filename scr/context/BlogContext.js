@@ -11,7 +11,7 @@ const reducer = (state, action) => {
         }
       ];
     case 'delete_blog_post':
-      return state.filter((blogPost) => blogPost.id != action.payload);
+      return state.filter((blogPost) => blogPost.id !== action.payload);
     default:
       return state;
   }
